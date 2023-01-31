@@ -6,7 +6,7 @@ let etàDelViaggiatore = parseFloat(prompt('Inserisci la tua età'))
 console.log(etàDelViaggiatore);
 
 
-const prezzoPerKilometro = parseFloat(("10"))
+const prezzoPerKilometro = parseFloat(("0.21"))
 
 
 const prezzoViaggio = parseFloat(chilometriPercorsi * prezzoPerKilometro ) 
@@ -22,13 +22,13 @@ console.log(scontoAnziani);
 let titleEelement = document.getElementById("maintitle")
 
 if (etàDelViaggiatore < 18)  {
-    titleEelement.innerHTML =  'Il costo del viaggio giovani è' + ' ' + (prezzoViaggio - scontoGiovani)
+    titleEelement.innerHTML =  'Il costo del viaggio giovani è' + ' ' + (prezzoViaggio - scontoGiovani) + '€'
 }
-else if (etàDelViaggiatore > 60) {
+else if (etàDelViaggiatore > 65) {
 
-    titleEelement.innerHTML =  'Il costo del tuo vaiggio anziani è' + ' ' + (prezzoViaggio - scontoAnziani)
+    titleEelement.innerHTML =  'Il costo del tuo vaiggio anziani è' + ' ' + (prezzoViaggio - scontoAnziani) + '€'
 }
 else {
-    titleEelement.innerHTML =  'Il costo del tuo viaggio è' + ' ' + (prezzoViaggio)
+    titleEelement.innerHTML =  'Il costo del tuo viaggio è' + ' ' + (prezzoViaggio) +'€'
 
 }
